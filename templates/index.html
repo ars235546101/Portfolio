@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aryan Singh | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#hero">Aryan Singh</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#internships">Internships</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              src="{{ url_for('static', filename='images/profile.jpg') }}"
+              alt="Aryan Singh professional photo"
+            >
+          </div>
+          <div class="hero-text">
+            <p class="intro">Hello, I'm</p>
+            <h1>Aryan Singh</h1>
+            <h2>Data Science &amp; Full-Stack Developer</h2>
+            <p class="tagline">Building AI-powered products that solve real-world problems.</p>
+            <div class="hero-buttons">
+              <a class="btn primary" href="#contact">Contact Me</a>
+              <a class="btn ghost" href="#projects">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>
+            I am a data science and full-stack developer focused on turning complex data into
+            impactful products. I enjoy building end-to-end solutions, from data collection and
+            modeling to deployment and storytelling.
+          </p>
+        </div>
+        <div class="section-content about-grid">
+          <div class="about-text">
+            <p>
+              My interests include machine learning, analytics, and user-centric product
+              development. I enjoy collaborating with teams to build reliable, scalable, and
+              insightful solutions that solve real-world problems.
+            </p>
+          </div>
+          <div class="education-card">
+            <h3>Education</h3>
+            <p><strong>College Name</strong></p>
+            <p>Bachelor of Technology in Computer Science</p>
+            <p>2023 – 2027</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Core skills aligned with data science, full-stack development, and analytics.</p>
+        </div>
+        <div class="section-content skills-grid">
+          <div class="skill-card">
+            <h3>Data Science &amp; ML</h3>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Scikit-learn</span>
+              <span>TensorFlow</span>
+              <span>Feature Engineering</span>
+              <span>Model Evaluation</span>
+              <span>Classification</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>AI Specialties</h3>
+            <div class="skill-tags">
+              <span>NLP</span>
+              <span>Audio Processing</span>
+              <span>Human Activity Recognition</span>
+              <span>Deep Learning</span>
+              <span>Computer Vision</span>
+              <span>Time Series</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Web &amp; Backend</h3>
+            <div class="skill-tags">
+              <span>Flask</span>
+              <span>REST APIs</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>SQL</span>
+              <span>Git/GitHub</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Data Visualization</h3>
+            <div class="skill-tags">
+              <span>Tableau</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+              <span>Dashboarding</span>
+              <span>Storytelling</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="internships" class="section">
+        <div class="section-header">
+          <h2>Internship Experience</h2>
+          <p>Hands-on experience building data-driven and product-focused solutions.</p>
+        </div>
+        <div class="section-content card-grid">
+          <article class="info-card">
+            <img
+              src="{{ url_for('static', filename='images/certify-offer-letter.jpg') }}"
+              alt="Certify Technology offer letter"
+            >
+            <div class="card-body">
+              <h3>Certify Technology — Data Science Intern</h3>
+              <p>
+                Supported analytics workflows by preparing datasets, experimenting with models,
+                and summarizing findings for stakeholders.
+              </p>
+              <ul>
+                <li>Cleaned and validated datasets for model training.</li>
+                <li>Built baseline ML models and documented performance.</li>
+                <li>Collaborated with mentors to translate insights into actions.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="info-card">
+            <img
+              src="{{ url_for('static', filename='images/rogue-code-certificate.jpg') }}"
+              alt="Rogue Code certificate of completion"
+            >
+            <div class="card-body">
+              <h3>Rogue Code — Data Science Intern</h3>
+              <p>
+                Contributed to machine learning projects focused on real-world classification
+                tasks and model evaluation.
+              </p>
+              <ul>
+                <li>Developed feature pipelines for sensor and activity datasets.</li>
+                <li>Evaluated models using precision, recall, and F1-score.</li>
+                <li>Created concise reports on findings and next steps.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Selected projects showcasing problem-solving, machine learning, and analytics.</p>
+        </div>
+        <div class="section-content card-grid">
+          <article class="project-card">
+            <h3>Swar-Samved</h3>
+            <p>
+              An AI-powered speech and audio analysis project that focuses on extracting insights
+              from voice signals. Built an end-to-end pipeline for audio preprocessing, feature
+              extraction, and model evaluation.
+            </p>
+            <a href="https://github.com/ars71205/Swar-Samved" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+          <article class="project-card">
+            <h3>HAR (Human Activity Recognition)</h3>
+            <p>
+              Developed a machine learning workflow to classify human activities using sensor data,
+              highlighting robust feature engineering and performance tuning.
+            </p>
+            <a href="https://github.com/ars71205/HAR-Rogue-Code" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+          <article class="project-card">
+            <h3>EV Dashboard</h3>
+            <p>
+              Created an interactive Tableau dashboard to visualize electric vehicle adoption,
+              market trends, and regional insights for decision-makers.
+            </p>
+            <a
+              href="https://public.tableau.com/app/profile/aryan.singh5238/viz/shared/PDRKKRDWK"
+              target="_blank"
+              rel="noopener"
+            >
+              View Dashboard
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="section-header">
+          <h2>Certifications</h2>
+          <p>Update the names and images below with your official certifications.</p>
+        </div>
+        <div class="section-content card-grid">
+          <article class="info-card">
+            <img
+              src="{{ url_for('static', filename='images/certification-1.jpg') }}"
+              alt="Certification 1"
+            >
+            <div class="card-body">
+              <h3>Certification Name 1</h3>
+            </div>
+          </article>
+          <article class="info-card">
+            <img
+              src="{{ url_for('static', filename='images/certification-2.jpg') }}"
+              alt="Certification 2"
+            >
+            <div class="card-body">
+              <h3>Certification Name 2</h3>
+            </div>
+          </article>
+          <article class="info-card">
+            <img
+              src="{{ url_for('static', filename='images/certification-3.jpg') }}"
+              alt="Certification 3"
+            >
+            <div class="card-body">
+              <h3>Certification Name 3</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="section-header">
+          <h2>Contact Me</h2>
+          <p>Let’s connect to discuss opportunities, collaborations, or project ideas.</p>
+        </div>
+        <div class="section-content">
+          <div class="contact-buttons">
+            <a class="btn primary" href="mailto:singharyan8077@gmail.com">Email Me</a>
+            <a
+              class="btn ghost"
+              href="https://www.linkedin.com/in/aryan-singh-44a047322"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+            <a class="btn ghost" href="https://github.com/ars71205" target="_blank" rel="noopener">
+              GitHub
+            </a>
+            <a class="btn ghost" href="{{ url_for('resume_download') }}">Download Resume</a>
+          </div>
+          <p class="contact-note">Email: singharyan8077@gmail.com</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Aryan Singh. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
